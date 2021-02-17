@@ -76,9 +76,9 @@ WSGI_APPLICATION = 'Instagram_Clone.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django-db',
-        'USER': 'django',
-        'PASSWORD': 'django',
+        'NAME': 'database',
+        'USER': 'user',
+        'PASSWORD': 'pass',
         'HOST': 'db',
         'PORT': '3306'
     }

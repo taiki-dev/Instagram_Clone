@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2>ホーム画面</h2>
+<p>
+    {% if user.is_authenticated %}
+        <em>{{ user.username }}でログインしています</em>
+        ログアウトするなら→<a href="{% url 'logout' %}">ログアウト！</a>
+    {% else %}
+        <em>まだログインしていません．</em><br>
+        ログインは<a href="{% url 'login' %}">こちら</a>
+    {% endif %}
+</p>
+{% endblock %}

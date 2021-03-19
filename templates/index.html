@@ -7,6 +7,7 @@
     <div class="post">
         <p>タイトル：{{ post.title }}</p>
         <p>メモ：{{ post.memo }}</p>
+        <p>投稿者名：{{ post.author }}</p>
         <p>============================</p>
     </div>
     {% endfor %}
@@ -16,6 +17,7 @@
 </div>
 <div class="login-user">
     <p>
+
         {% if user.is_authenticated %}
             <em>{{ user.username }}でログインしています</em>
             ログアウトするなら→<a href="{% url 'logout' %}">ログアウト！</a>
